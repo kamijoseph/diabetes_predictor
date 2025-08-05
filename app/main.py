@@ -6,7 +6,7 @@ import pickle
 import numpy as np
 import os
 
-# model and scaler load
+# model and scaler loading
 model_path = os.path.join(os.path.dirname(__file__), "../notebook/model.sav")
 scaler_path = os.path.join(os.path.dirname(__file__), "../notebook/scaler.sav")
 
