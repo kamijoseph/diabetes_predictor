@@ -27,7 +27,19 @@ def prediction_system(input_data):
 
 # main function
 def main():
-    pass
+
+    # title
+    st.title("Diabetes Prediction Model")
+
+    # getting input data from the user
+    Pregnancies = st.text_input("Number of Pregnancies")
+    Glucose = st.text_input("Glucose Level")
+    BloodPressure = st.text_input("Blood Pressure")
+    SkinThickness = st.text_input("Skin Thickness")
+    Insulin = st.text_input("Insulin Level")
+    BMI = st.text_input("BMI")
+    DiabetesPedigreeFunction = st.text_input("Diabetes Pedigree Function")
+    Age = st.text_input("Age")
 
 
 if __name__ == "__main__":
