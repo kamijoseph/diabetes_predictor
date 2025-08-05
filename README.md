@@ -1,4 +1,4 @@
-# 🧠 Streamlit Diabetes Prediction App
+# 🧠 Streamlit Diabetes Prediction WebApp
 
 🔗 **Live Demo**: [Click here to try the deployed app](https://diabetes-predictor.streamlit.app/)
 
