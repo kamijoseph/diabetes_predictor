@@ -33,15 +33,7 @@ def prediction_system(input_data):
         "Not Diabetic": round(probabilities[0] * 100, 2),
         "Diabetic": round(probabilities[1] * 100, 2)
     }
-
-    st.divider()
-
-    # awareness
-    st.write("This project is to be used by medical professional in making a diagnosis but is never a substitute for professional and proper medical diagnosis")
-    
     return result, prob_dict
-
-
 
 # main execute function
 def main():
