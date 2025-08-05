@@ -4,10 +4,22 @@ import streamlit as st
 import pandas as pd
 import pickle
 import numpy as np
+import os
 
 # model and scaler load
-model = pickle.load(open("notebook/model.sav", "rb"))
-scaler = pickle.load(open("notebook/scaler.sav", "rb"))
+model_path = os.path.join(os.path.dirname(__file__), "../notebook/model.sav")
+scaler_path = os.path.join(os.path.dirname(__file__), "../notebook/scaler.sav")
+
+# loading the model
+with open(model_path, "rb") as model_file:
+    model = pickle.load(model_file)
+
+# loading the scaler
+with open(scaler_path, "rb") as scaler_file:
+    scaler = pickle.load(scaler_file)
+
+# model = pickle.load(open("notebook/model.sav", "rb"))
+# scaler = pickle.load(open("notebook/scaler.sav", "rb"))
 
 # predictive system
 def prediction_system(input_data):
