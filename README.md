@@ -18,21 +18,23 @@ The classifier is based on the **Pima Indians Diabetes Dataset** from the [UCI M
 ---
 
 ## 📁 Project Structure
-
 ```bash
 diabetes_predictor/
 │
 ├── app/
-│   └── main.py              # Streamlit UI application
+│   └── main.py
+│
+├── data/
+│   └── diabetes.csv
 │
 ├── notebook/
-│   ├── model.sav            # Trained SVM model (with probability enabled)
-│   ├── scaler.sav           # StandardScaler used for input normalization
-│   └── data.csv             # Sample training dataset (Pima Indians)
+│   ├── diabetics_prediction.ipynb
+│   ├── model.sav
+│   └── scaler.sav
 │
-├── requirements.txt         # Conda dependencies list
-└── README.md                # You're reading it
-```
+├── requirements.txt
+└── README.md
+````
 
 ## 🚀 Features
 
